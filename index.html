@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="PonyBuy spreadsheet auf Deutsch erklärt: CAFANS-Kategorien öffnen, Größen und QC-Fotos prüfen und die Gesamtkosten für den Versand nach Deutschland vergleichen.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="PonyBuy spreadsheet – Kategorien, Größen und QC-Fotos">
+  <meta property="og:description" content="Deutscher Einkaufsratgeber mit CAFANS-Kategorien und praktischen Checks für Produktvarianten, Fotos und Versand.">
+  <title>PonyBuy spreadsheet – Kategorien, Größen und QC-Fotos</title>
+  <!-- Recherche: 10 relevante Domains aus der Websuche. Die Reihenfolge der ersten Google-Ergebnisseite war nicht verifizierbar.
+       Quellen: ponybuypicklist.com, sopel.fit, spreadsheetponybuy.com, qcradar.com, ponybuyfind.com,
+       ponybuytable.com, maisonlooks.com, ponybuy.io, ponybuyreps.com, taofind.com.
+       Nebenkeywords: PonyBuy Produktlinks, PonyBuy Schuhe, PonyBuy QC-Fotos, PonyBuy Versand nach Deutschland. -->
+  <style>
+    :root{color-scheme:light;--paper:#f8f4ed;--ink:#261a23;--plum:#38243b;--line:#d8c9c5;--card:#fffdf9;--accent:#f2c79a}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    a{color:inherit}
+    :focus-visible{outline:3px solid #ad4f28;outline-offset:4px}
+    .wrap{width:min(100% - 2rem,70rem);margin-inline:auto}
+    header{border-bottom:1px solid var(--line);padding:.75rem 0;font-weight:750}
+    h1,h2,h3,p,figure{margin:0}
+    h1{font-size:clamp(2.5rem,7vw,5.25rem);letter-spacing:-.065em;line-height:.98;overflow-wrap:anywhere}
+    h2{font-size:clamp(1.45rem,3vw,2rem);line-height:1.2}
+    h3{font-size:1.13rem;line-height:1.3}
+    p{margin-top:.65rem;max-width:68ch}
+    section,nav{margin-block:1.5rem 2.5rem}
+    .hero{display:grid;grid-template-columns:1.25fr 1fr;overflow:hidden;border-radius:1.2rem;background:var(--plum);color:white}
+    .hero-copy{padding:clamp(1.25rem,4vw,3.2rem);align-self:center}
+    .hero img{width:100%;height:100%;min-height:15rem;max-height:26rem;object-fit:contain;background:#f0e9e0}
+    .button{display:inline-block;margin-top:1rem;padding:.65rem 1rem;border-radius:.5rem;background:var(--accent);color:var(--ink);font-weight:750;text-decoration:none}
+    .categories,.gallery{list-style:none;margin:1rem 0 0;padding:0;display:grid;gap:.65rem}
+    .categories{grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr))}
+    .categories a{display:flex;align-items:center;min-height:3rem;padding:.55rem .8rem;background:var(--card);border:1px solid var(--line);border-radius:.45rem;font-weight:650;text-decoration:none}
+    .categories a:hover{background:#f3e4da;text-decoration:underline}
+    .gallery{grid-template-columns:repeat(auto-fit,minmax(min(100%,12rem),1fr))}
+    figure{overflow:hidden;border:1px solid var(--line);border-radius:.65rem;background:var(--card)}
+    figure img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#fff}
+    figcaption{padding:.6rem .75rem;font-size:.92rem}
+    .guides{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr));gap:.75rem;margin-top:1rem}
+    article,details{background:var(--card);border:1px solid var(--line);border-radius:.65rem;padding:1rem}
+    details{margin-top:.6rem}
+    summary{cursor:pointer;font-weight:700}
+    footer{background:var(--plum);color:white;padding:1.5rem 0}
+    @media(max-width:42rem){.hero{grid-template-columns:1fr}.hero img{height:auto;min-height:0;max-height:15rem}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "inLanguage":"de",
+        "name":"PonyBuy spreadsheet – Kategorien, Größen und QC-Fotos",
+        "description":"Deutscher Einkaufsratgeber mit CAFANS-Kategorien und praktischen Checks für Produktvarianten, Fotos und Versand.",
+        "about":{"@type":"Thing","name":"PonyBuy spreadsheet"}
+      },
+      {
+        "@type":"FAQPage",
+        "inLanguage":"de",
+        "mainEntity":[
+          {"@type":"Question","name":"Was ist ein PonyBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Eine nach Kategorien geordnete Übersicht mit Produktverweisen und Vergleichsdaten. Auf dieser Seite führen die Kategorien zum CAFANS-Katalog."}},
+          {"@type":"Question","name":"Wie prüfe ich, ob ein Produktlink noch funktioniert?","acceptedAnswer":{"@type":"Answer","text":"Öffne die aktuelle Produktseite und gleiche Artikelnummer, Farbe und Größe mit deinen Notizen ab. Vermerke das Datum der Prüfung."}},
+          {"@type":"Question","name":"Belegen QC-Fotos die Echtheit eines Artikels?","acceptedAnswer":{"@type":"Answer","text":"Nein. QC-Fotos zeigen sichtbare Merkmale wie Nähte und Etiketten. Für einen Echtheitsnachweis brauchst du unabhängig überprüfbare Angaben zur Herkunft."}},
+          {"@type":"Question","name":"Welche Kosten sollte ich für den Versand nach Deutschland vergleichen?","acceptedAnswer":{"@type":"Answer","text":"Vergleiche Produktpreis, Inlandsversand, Servicegebühren und internationalen Versand. Prüfe mögliche Einfuhrkosten und rechne die Beträge zum verwendeten Wechselkurs in Euro um."}}
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/ciibi/">
+</head>
+<body>
+  <header><div class="wrap"><a href="https://www.cafans.com">CAFANS</a></div></header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="titel">
+      <div class="hero-copy">
+        <h1 id="titel">PonyBuy spreadsheet</h1>
+        <p>Finde die passende Kategorie im CAFANS-Katalog und vergleiche Produktvarianten, Maße und Fotos, bevor du ein Angebot auswählst.</p>
+        <a class="button" href="https://www.cafans.com">CAFANS-Katalog öffnen</a>
+      </div>
+      <img src="https://images.prodirectsport.com/productimages/Main/238254_Main_1851812.jpg" width="720" height="540" alt="Weiße Nike Air Force 1 ’07 Sneaker" fetchpriority="high" loading="eager">
+    </section>
+
+    <nav aria-labelledby="kategorien">
+      <h2 id="kategorien">Alle Produktkategorien</h2>
+      <ul class="categories">
+        <li><a href="https://cafans.com/category-911-Shoes.html">Schuhe</a></li>
+        <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Hoodies &amp; Pullover</a></li>
+        <li><a href="https://cafans.com/category-913-T-Shirts.html">T-Shirts</a></li>
+        <li><a href="https://cafans.com/category-914-Jackets.html">Jacken</a></li>
+        <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Hosen &amp; Shorts</a></li>
+        <li><a href="https://cafans.com/category-916-Headwear.html">Kopfbedeckungen</a></li>
+        <li><a href="https://cafans.com/category-917-Sets.html">Sets</a></li>
+        <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Unterwäsche</a></li>
+        <li><a href="https://cafans.com/category-919-Jersey.html">Trikots</a></li>
+        <li><a href="https://cafans.com/category-920-Accessories.html">Accessoires</a></li>
+      </ul>
+    </nav>
+
+    <section aria-labelledby="bildbeispiele">
+      <h2 id="bildbeispiele">Bildbeispiele für Kleidung und Accessoires</h2>
+      <p>Die gezeigten Markenmodelle dienen als Stilbeispiele. Das aktuelle Sortiment findest du im Katalog.</p>
+      <ul class="gallery">
+        <li><figure>
+          <img src="https://www.louisvuitton.cn/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-%E7%89%9B%E4%BB%94%E5%A4%B9%E5%85%8B--FVJA29EFY610_PM2_Front%20view.jpg" width="480" height="360" alt="Vorderansicht einer Louis Vuitton Jeansjacke mit Monogramm" loading="lazy" decoding="async">
+          <figcaption>Louis Vuitton · Monogramm-Jeansjacke</figcaption>
+        </figure></li>
+        <li><figure>
+          <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="480" height="360" alt="Beigefarbene Gucci Baseballkappe mit GG-Muster" loading="lazy" decoding="async">
+          <figcaption>Gucci · GG-Canvas-Kappe</figcaption>
+        </figure></li>
+        <li><figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/%E3%82%AB%E3%83%AC-90-%E3%80%8A%E3%81%99%E3%81%B9%E3%81%A6%E3%81%AF%E9%9E%8D%E3%81%AE%E4%B8%AD%E3%81%AB%E3%80%8B--004204S%2005-flat-wm-3-0-0-1000-1000_g.jpg" width="480" height="360" alt="Ausgebreitetes Hermès Carré 90 Seidentuch mit Reitsportmotiv" loading="lazy" decoding="async">
+          <figcaption>Hermès · Seidentuch Carré 90</figcaption>
+        </figure></li>
+        <li><figure>
+          <img src="https://cdn.theluxurycloset.com/uploads/products/750x750/luxury-women-dior-used-accessories-p841613-003.jpg" width="480" height="360" alt="Goldfarbene Dior Clair D Lune Halskette mit Kristallen" loading="lazy" decoding="async">
+          <figcaption>Dior · Clair D Lune Halskette</figcaption>
+        </figure></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="ratgeber">
+      <h2 id="ratgeber">Einkaufsratgeber</h2>
+      <div class="guides">
+        <article>
+          <h3>Produktlinks und Varianten abgleichen</h3>
+          <p>Wenn du PonyBuy Produktlinks oder Funde von Weidian, Taobao und 1688 sammelst, speichere den ursprünglichen Händlerlink und die Artikelnummer. Halte Farbvariante, Größe und Datum der letzten Prüfung fest. Prüfe die aktuelle Verfügbarkeit der gewählten Variante direkt im Angebot. Zwei Händler können dasselbe Vorschaubild für unterschiedliche Modelle verwenden.</p>
+        </article>
+        <article>
+          <h3>Schuhe und Kleidung richtig ausmessen</h3>
+          <p>Für PonyBuy Schuhe misst du beide Füße in Zentimetern und nutzt den längeren Fuß für die Größentabelle des konkreten Modells. Prüfe, ob die Tabelle Fußlänge oder Einlegesohlenlänge angibt. Vergleiche bei Hoodies die Brustweite und Rückenlänge mit einem gut sitzenden Kleidungsstück. Bei Jacken hilft zusätzlich die Ärmellänge, bei Hosen die Bundweite und Innenbeinlänge.</p>
+        </article>
+        <article>
+          <h3>QC-Fotos auf Details prüfen</h3>
+          <p>Bei PonyBuy QC-Fotos suchst du zuerst nach der tatsächlich gewählten Farbe und Größe. Bei Sneakern helfen Aufnahmen von Sohle und Ferse, bei Jacken Nahaufnahmen von Nähten und Reißverschluss. Für Kappen sind Kopfumfang und Verschluss wichtig. Bei Schmuck vergleichst du Kettenlänge, Verschluss und die dokumentierten Materialangaben. Frage bei unklarem Maß nach einem Foto mit Maßband.</p>
+        </article>
+        <article>
+          <h3>Gesamtkosten für Deutschland berechnen</h3>
+          <p>Für den PonyBuy Versand nach Deutschland prüfst du vorab, ob dein gewählter Anbieter aktuell Bestellungen und deine gewünschte Versandart unterstützt. Frage beim Schuhkarton nach Paketmaß und Volumengewicht. Vergleiche die Endsumme in Euro mit Inlandsversand, Servicegebühren, internationalem Porto und möglichen Einfuhrkosten. Halte fest, welche Beträge bestätigt und welche geschätzt sind.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq">
+      <h2 id="faq">Häufige Fragen</h2>
+      <details>
+        <summary>Was ist ein PonyBuy spreadsheet?</summary>
+        <p>Eine nach Kategorien geordnete Übersicht mit Produktverweisen und Vergleichsdaten. Auf dieser Seite führen die Kategorien zum CAFANS-Katalog.</p>
+      </details>
+      <details>
+        <summary>Wie prüfe ich, ob ein Produktlink noch funktioniert?</summary>
+        <p>Öffne die aktuelle Produktseite und gleiche Artikelnummer, Farbe und Größe mit deinen Notizen ab. Vermerke das Datum der Prüfung.</p>
+      </details>
+      <details>
+        <summary>Belegen QC-Fotos die Echtheit eines Artikels?</summary>
+        <p>Nein. QC-Fotos zeigen sichtbare Merkmale wie Nähte und Etiketten. Für einen Echtheitsnachweis brauchst du unabhängig überprüfbare Angaben zur Herkunft.</p>
+      </details>
+      <details>
+        <summary>Welche Kosten sollte ich für den Versand nach Deutschland vergleichen?</summary>
+        <p>Vergleiche Produktpreis, Inlandsversand, Servicegebühren und internationalen Versand. Prüfe mögliche Einfuhrkosten und rechne die Beträge zum verwendeten Wechselkurs in Euro um.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <strong>Einkaufsratgeber von CAFANS</strong>
+      <p>CAFANS führt diesen Ratgeber unabhängig von PonyBuy und den gezeigten Marken.</p>
+      <a class="button" href="https://www.cafans.com">Zur CAFANS-Startseite</a>
+    </div>
+  </footer>
+</body>
+</html>
